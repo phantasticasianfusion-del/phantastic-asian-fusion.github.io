@@ -74,13 +74,14 @@ body {
 /* We use an <img> tag in HTML, so no background-image here */
 .hero {
   width: 100%;
+  height: 350px; /* adjust height */
+  overflow: hidden;
 }
 
-/* HERO IMAGE */
 .hero img {
   width: 100%;
-  height: 350px;       /* adjust height as you like */
-  object-fit: cover;   /* keeps image nicely cropped */
+  height: 100%;
+  object-fit: cover;  /* makes image fill the space neatly */
   display: block;
 }
 
