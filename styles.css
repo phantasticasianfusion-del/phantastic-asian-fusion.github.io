@@ -72,16 +72,22 @@ body {
 
 /* ========== HERO (HOME PAGE ONLY) ========== */
 /* We use an <img> tag in HTML, so no background-image here */
+/* HERO CONTAINER */
 .hero {
   width: 100%;
-  height: 350px; /* adjust height */
-  overflow: hidden;
+  height: 350px;            /* set the new desired height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;         /* keeps things clean */
+  background-color: #000;   /* optional: change to your theme color */
 }
 
+/* HERO IMAGE */
 .hero img {
   width: 100%;
   height: 100%;
-  object-fit: cover;  /* makes image fill the space neatly */
+  object-fit: contain;      /* shows the full image */
   display: block;
 }
 
