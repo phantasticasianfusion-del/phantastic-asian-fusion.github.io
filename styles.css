@@ -286,3 +286,412 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 25px;
 }
+/* ========== GLOBAL RESET ========== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #faf7f0;
+  color: #222;
+}
+
+/* ========== HEADER ========== */
+.header {
+  background-color: #111;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-box img {
+  width: 80px;
+  height: auto;
+}
+
+.header-text h1 {
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+.header-text h3 {
+  margin: 0.15rem 0 0;
+  font-weight: 400;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+  background-color: #222;
+}
+
+.navbar ul {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  display: block;
+  padding: 0.85rem 0;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  border-bottom: 3px solid #ffc400;
+}
+
+/* ========== HERO (HOME PAGE ONLY) ========== */
+/* We use an <img> tag in HTML, so no background-image here */
+/* HERO CONTAINER */
+.hero {
+  width: 100%;
+  height: 350px;            /* set the new desired height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;         /* keeps things clean */
+  background-color: #000;   /* optional: change to your theme color */
+}
+
+/* HERO IMAGE */
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;      /* shows the full image */
+  display: block;
+}
+
+/* REMOVE PAGE WRAPPER BORDER */
+.page-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border: none;        /* removes the black border */
+}
+
+.page-wrapper main {
+  padding: 2rem 1.5rem 3rem;
+}
+
+/* ========== HOME PAGE STYLES ========== */
+.intro-section {
+  background: #fff;
+  padding: 1.75rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.intro-section h2 {
+  margin-bottom: 0.75rem;
+}
+
+.favorites-section {
+  margin-top: 2.5rem;
+}
+
+.favorites-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.favorites-header h2 {
+  margin: 0;
+}
+
+.favorites-header hr {
+  flex: 1;
+  border: none;
+  border-top: 2px solid #ffc400;
+}
+
+.favorites-icons {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.favorite-icon {
+  background: #fff;
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.favorites-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.25rem;
+}
+
+.favorite-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* ========== MENU PAGE STYLES ========== */
+
+.menu-intro {
+  background: #fff;
+  padding: 1.75rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.menu-section {
+  margin-top: 2.5rem;
+}
+
+.menu-section h2 {
+  margin-bottom: 0.75rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.2rem;
+}
+
+.menu-section h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  height: 3px;
+  background: #ffc400;
+}
+
+.menu-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.menu-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.25rem 1.35rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+.menu-item h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.menu-item p {
+  margin: 0;
+  font-size: 0.93rem;
+  line-height: 1.5;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 0.98rem;
+  color: #c45b00;
+}
+
+/* ========== FOOTER & SITE MAP ========== */
+footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  font-size: 0.85rem;
+  border-top: 3px solid #000;
+}
+
+.footer-nav {
+  margin-bottom: 0.5rem;
+}
+
+.footer-nav a {
+  color: #ffc400;
+  text-decoration: none;
+  margin: 0 0.2rem;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 700px) {
+  .header-inner {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .header-text h1 {
+    font-size: 1.3rem;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 0.3rem 1rem 0.6rem;
+  }
+
+  .page-wrapper main {
+    padding: 1.5rem 1rem 2.5rem;
+  }
+}
+.about-photo {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;    /* crops to fill the area */
+  border-radius: 8px;
+  display: block;
+}
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+/* FESTIVAL HERO */
+.festival-hero {
+  background: radial-gradient(circle at top, #ffb347 0, #4b1b5f 40%, #140827 100%);
+  padding: 30px 20px 40px;
+  color: #fff;
+}
+
+.festival-hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 380px) minmax(0, 1fr);
+  gap: 30px;
+  align-items: center;
+}
+
+.festival-flyer {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+  display: block;
+}
+
+.festival-hero-text h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.festival-tagline {
+  font-size: 1.05rem;
+  margin-bottom: 15px;
+}
+
+.lantern-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.lantern-pill {
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 196, 0, 0.9);
+  color: #4b1b5f;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* EVENT SECTIONS */
+.event-section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.7;
+}
+
+.center {
+  text-align: center;
+}
+
+.festival-two-column {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.event-list {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.event-list li {
+  margin-bottom: 6px;
+}
+
+/* MENU CARDS */
+.festival-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.menu-card {
+  background: #fff7eb;
+  border-radius: 12px;
+  padding: 16px 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* FESTIVAL GALLERY */
+.festival-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.festival-photo {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.festival-photo:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  background: #ffe9c5;
+  padding: 40px 20px 50px;
+  margin-top: 20px;
+}
