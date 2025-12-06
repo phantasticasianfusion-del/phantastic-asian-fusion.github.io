@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Phantastic Asian Fusion</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo-box">
+        <img src="logo.png" alt="Phantastic Asian Fusion Logo">
+      </div>
+
+      <div class="header-text">
+        <h1>Phantastic Asian Fusion</h1>
+        <h3>Pop-Up Family Asian Food Events</h3>
+      </div>
+    </div>
+  </header>
+
+  <!-- NAV BAR -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section class="intro-section contact-intro">
+      <h2>Get in Touch</h2>
+      <p>
+        Have a question about our menu, want to invite us to your event, or just want
+        to say hi? Send us a message and our family will get back to you as soon as we can.
+      </p>
+      <p>
+        You can also email us directly at
+        <a href="mailto:info@phantasticasianfusion.com">info@phantasticasianfusion.com</a>.
+      </p>
+    </section>
+
+    <section class="contact-section">
+      <div class="contact-wrapper">
+        <!-- CONTACT FORM -->
+        <form class="contact-form" action="#" method="post">
+          <!-- You can replace # with your form handler later -->
+
+          <div class="form-group">
+            <label for="name">Name<span class="required">*</span></label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email<span class="required">*</span></label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Reason for Reaching Out</label>
+            <select id="subject" name="subject">
+              <option value="">Select an option</option>
+              <option value="event">Book us for an event</option>
+              <option value="menu">Question about the menu</option>
+              <option value="allergy">Allergy or dietary question</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message<span class="required">*</span></label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+
+        <!-- SIDE INFO -->
+        <div class="contact-info-box">
+          <h3>Event & Catering Inquiries</h3>
+          <p>
+            Hosting a festival, school event, or community market? We’d love to bring
+            Phantastic Asian Fusion to your guests.
+          </p>
+          <ul>
+            <li>Pop-up booths & night markets</li>
+            <li>Outdoor festivals & cultural events</li>
+            <li>Private parties (depending on size & location)</li>
+          </ul>
+          <p class="small-text">
+            Please include your event date, location, estimated guest count, and any
+            important details in your message so we can respond with more info.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a> |
+      <a href="menu.html">Menu</a> |
+      <a href="events.html">Events</a> |
+      <a href="gallery.html">Gallery</a> |
+      <a href="about.html">About Us</a> |
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p>© 2025 Phantastic Asian Fusion | Contact: info@phantasticasianfusion.com</p>
+  </footer>
+
+</body>
+</html>
